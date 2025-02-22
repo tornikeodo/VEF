@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats - VEF League</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #0033cc, #0066ff);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            text-align: center;
+            padding: 40px;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+        .stat-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">VEF League</div>
+        <nav>
+            <ul>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="draws.html">Draws</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Player and Team Stats</h1>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-title">Top Scorers</div>
+                <p>Player 1 - 20 Goals</p>
+                <p>Player 2 - 18 Goals</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Top Assists</div>
+                <p>Player 3 - 15 Assists</p>
+                <p>Player 4 - 12 Assists</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Best Defenders</div>
+                <p>Player 5 - 30 Tackles</p>
+                <p>Player 6 - 25 Tackles</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
